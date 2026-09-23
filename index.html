@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUGGAGE PASS | 신세계백화점 핸즈프리 쇼핑 서비스</title>
+  <meta name="description" content="외국인 관광객 전용 신세계 핸즈프리 쇼핑 서비스 LUGGAGE PASS. 쇼핑은 더 많이, 짐은 더 가볍게! 캐리어 보관부터 공항 수령까지 한 번에.">
+  <meta name="keywords" content="신세계, LUGGAGE PASS, 핸즈프리쇼핑, 외국인관광객, 캐리어보관, 공항수령, Shinsegae, HandsFreeKorea">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LUGGAGE PASS | 신세계 핸즈프리 쇼핑">
+  <meta property="og:description" content="쇼핑은 더 많이, 짐은 더 가볍게. 신세계백화점 외국인 전용 LUGGAGE PASS">
+  <meta property="og:image" content="assets/images/poster.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Sticky Navigation Bar
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-sub">SHINSEGAE</span>
+      <span class="nav-logo-main">LUGGAGE <span>PASS</span></span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="nav-menu" id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-i18n="nav_about">서비스 소개</a></li>
+        <li><a href="#how-it-works" class="nav-link" data-i18n="nav_how">이용 방법</a></li>
+        <li><a href="#pricing" class="nav-link" data-i18n="nav_pricing">요금 안내</a></li>
+        <li><a href="#media" class="nav-link" data-i18n="nav_media">미디어</a></li>
+        <li><a href="#apply" class="nav-link" data-i18n="nav_apply">신청 안내</a></li>
+      </ul>
+    </nav>
+
+    <!-- Nav Actions -->
+    <div class="nav-actions">
+      <button class="lang-toggle-btn" id="lang-toggle" aria-label="언어 변경">
+        🌐 <span id="lang-text">ENG</span>
+      </button>
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. Hero Section (3-1)
+         ========================================================================= -->
+    <section id="hero" class="hero" role="banner">
+      <div class="hero__content">
+        <!-- 뱃지 -->
+        <span class="hero__badge" data-animate="fade-up" data-delay="100" data-i18n="hero_badge">
+          외국인 관광객 전용 핸즈프리 쇼핑
+        </span>
+
+        <!-- 메인 타이틀 -->
+        <h1 class="hero__title" data-animate="fade-up" data-delay="200">
+          LUGGAGE PASS <span class="airplane-icon" aria-hidden="true">✈</span>
+        </h1>
+
+        <!-- 서브 카피 -->
+        <p class="hero__subtitle" data-animate="fade-up" data-delay="300" data-i18n="hero_subtitle">
+          쇼핑은 더 많이, 짐은 더 가볍게
+        </p>
+        <p class="hero__subtitle-en" data-animate="fade-up" data-delay="400" data-i18n="hero_subtitle_en">
+          Shop more. Carry less.
+        </p>
+
+        <!-- 3대 기능 Pills -->
+        <div class="hero__features" role="list" data-animate="fade-up" data-delay="500">
+          <div class="hero__feature-pill" role="listitem">
+            <span aria-hidden="true">🧳</span>
+            <span data-i18n="feature_storage">캐리어 보관</span>
+          </div>
+          <div class="hero__feature-pill" role="listitem">
+            <span aria-hidden="true">🛍️</span>
+            <span data-i18n="feature_collect">구매품 자동 집결</span>
+          </div>
+          <div class="hero__feature-pill" role="listitem">
+            <span aria-hidden="true">✈️</span>
+            <span data-i18n="feature_airport">공항 데스크 수령</span>
+          </div>
+        </div>
+
+        <!-- CTA 버튼 -->
+        <div data-animate="fade-up" data-delay="600">
+          <a href="#apply" class="hero__cta" id="hero-cta-btn" data-i18n="hero_cta">
+            웰컴센터에서 지금 신청하세요 ›
+          </a>
+        </div>
+      </div>
+
+      <!-- 스크롤 다운 인디케이터 -->
+      <div class="hero__scroll-indicator" id="scroll-indicator"
+           onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})"
+           aria-label="아래로 스크롤">
+        <span>SCROLL</span>
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M10 4v12M4 10l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. About Section (3-2)
+         ========================================================================= -->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-label" data-i18n="about_label">ABOUT LUGGAGE PASS</span>
+          <h2 class="section-heading" data-i18n="about_heading">LUGGAGE PASS란?</h2>
+          <p class="section-desc" data-i18n="about_desc">
+            신세계백화점이 외국인 관광객을 위해 선보이는 프리미엄 핸즈프리 쇼핑 서비스입니다. 쇼핑 중 짐 걱정 없이 두 손 자유롭게 즐기시고, 귀국 당일 공항에서 편안하게 한 번에 수령하세요.
+          </p>
+        </div>
+
+        <!-- 3열 카드 그리드 -->
+        <div class="about__grid">
+          <!-- 카드 1 -->
+          <article class="feature-card" data-animate="fade-up" data-delay="100">
+            <span class="feature-card__number">01</span>
+            <div class="feature-card__icon-wrap" aria-hidden="true">🧳</div>
+            <h3 class="feature-card__title" data-i18n="feature1_title">캐리어 보관</h3>
+            <p class="feature-card__desc" data-i18n="feature1_desc">
+              백화점 도착 즉시 웰컴센터에 무거운 캐리어를 맡기세요. 쇼핑하는 동안 짐 걱정은 zero입니다.
+            </p>
+          </article>
+
+          <!-- 카드 2 -->
+          <article class="feature-card" data-animate="fade-up" data-delay="250">
+            <span class="feature-card__number">02</span>
+            <div class="feature-card__icon-wrap" aria-hidden="true">🛍️</div>
+            <h3 class="feature-card__title" data-i18n="feature2_title">구매품 자동 집결</h3>
+            <p class="feature-card__desc" data-i18n="feature2_desc">
+              각 매장에서 결제 시 패스를 제시하면 구매 상품이 자동으로 안전하게 취합·보관됩니다.
+            </p>
+          </article>
+
+          <!-- 카드 3 -->
+          <article class="feature-card" data-animate="fade-up" data-delay="400">
+            <span class="feature-card__number">03</span>
+            <div class="feature-card__icon-wrap" aria-hidden="true">✈️</div>
+            <h3 class="feature-card__title" data-i18n="feature3_title">공항 데스크 수령</h3>
+            <p class="feature-card__desc" data-i18n="feature3_desc">
+              귀국 당일 공항(인천/김포) 전용 데스크에서 보관된 캐리어와 쇼핑 물품을 일괄 수령하세요.
+            </p>
+          </article>
+        </div>
+
+        <!-- 하단 링크 -->
+        <div class="text-center" data-animate="fade-up" data-delay="500">
+          <a href="#apply" class="about__cta-btn" data-i18n="about_cta">
+            서비스 신청하러 가기 ›
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. How It Works Section (3-3)
+         ========================================================================= -->
+    <section id="how-it-works" class="how section-padding" style="background: rgba(201, 169, 110, 0.05);">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-label" data-i18n="how_label">HOW IT WORKS</span>
+          <h2 class="section-heading" data-i18n="how_heading">이용 방법</h2>
+          <p class="section-desc" data-i18n="how_desc">
+            복잡한 절차 없이, 단 3단계로 가볍고 스마트한 쇼핑 여행을 시작하세요.
+          </p>
+        </div>
+
+        <!-- 3단계 타임라인 -->
+        <div class="how__timeline">
+          <!-- STEP 1 -->
+          <article class="step-card" data-animate="fade-up" data-delay="100">
+            <span class="step-card__badge">STEP 01</span>
+            <div class="step-card__icon" aria-hidden="true">🎫</div>
+            <h3 class="step-card__title" data-i18n="step1_title">패스 발급</h3>
+            <p class="step-card__desc" data-i18n="step1_desc">
+              신세계 웰컴센터에 방문하여 여권 확인 후 여행 일정에 맞는 패스를 발급받습니다.
+            </p>
+          </article>
+
+          <!-- 커넥터 1 -->
+          <div class="step-connector" aria-hidden="true" data-animate="fade-in" data-delay="200">
+            <span>›</span>
+          </div>
+
+          <!-- STEP 2 -->
+          <article class="step-card" data-animate="fade-up" data-delay="300">
+            <span class="step-card__badge">STEP 02</span>
+            <div class="step-card__icon" aria-hidden="true">🛍️</div>
+            <h3 class="step-card__title" data-i18n="step2_title">두 손 가볍게 쇼핑</h3>
+            <p class="step-card__desc" data-i18n="step2_desc">
+              쇼핑 결제 시 패스를 제시하면 구매한 물건들이 자동으로 안전하게 집결 보관됩니다.
+            </p>
+          </article>
+
+          <!-- 커넥터 2 -->
+          <div class="step-connector" aria-hidden="true" data-animate="fade-in" data-delay="400">
+            <span>›</span>
+          </div>
+
+          <!-- STEP 3 -->
+          <article class="step-card" data-animate="fade-up" data-delay="500">
+            <span class="step-card__badge">STEP 03</span>
+            <div class="step-card__icon" aria-hidden="true">🛫</div>
+            <h3 class="step-card__title" data-i18n="step3_title">공항에서 한 번에 수령</h3>
+            <p class="step-card__desc" data-i18n="step3_desc">
+              출국 당일 공항 지정 픽업 데스크에서 보관된 캐리어와 쇼핑백을 한 번에 수령합니다.
+            </p>
+          </article>
+        </div>
+
+        <!-- 유의사항 배너 -->
+        <div class="how__notice-box" data-animate="fade-up" data-delay="600">
+          <span class="notice-icon" aria-hidden="true">💡</span>
+          <span data-i18n="how_notice">
+            <strong>안내</strong>: 패스 발급 시 본인 확인을 위해 <strong>여권(Passport)</strong>을 반드시 지참해 주세요.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. Pricing Section (3-4)
+         ========================================================================= -->
+    <section id="pricing" class="pricing section-padding">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-label" data-i18n="pricing_label">PRICING PLAN</span>
+          <h2 class="section-heading" data-i18n="pricing_heading">맞춤형 요금 플랜</h2>
+          <p class="section-desc" data-i18n="pricing_desc">
+            당일 집중 쇼핑부터 여유로운 체류형 쇼핑까지, 일정에 맞는 최적의 패스를 선택하세요.
+          </p>
+        </div>
+
+        <!-- 요금제 그리드 -->
+        <div class="pricing__grid">
+          <!-- 1. DAY PLAN -->
+          <div class="pricing-card" data-animate="fade-up" data-delay="100">
+            <h3 class="pricing-card__name">DAY</h3>
+            <div class="pricing-card__price-wrap">
+              <span class="pricing-card__price">₩20,000</span>
+              <span class="pricing-card__period" data-i18n="day_period">/ 당일 이용</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="day_f1">캐리어 1개 기본 보관</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="day_f2">당일 구매품 실시간 집결</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="day_f3">공항 일반 픽업 데스크</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="day_f4">기본 수하물 태그 제공</span></li>
+            </ul>
+            <a href="#apply" class="pricing-card__btn" data-plan="DAY" data-i18n="plan_select_btn">플랜 선택</a>
+          </div>
+
+          <!-- 2. STAY PLAN (RECOMMENDED) -->
+          <div class="pricing-card pricing-card--popular" data-animate="fade-up" data-delay="200">
+            <div class="pricing-card__badge" data-i18n="recommended_badge">⭐ RECOMMENDED</div>
+            <h3 class="pricing-card__name">STAY</h3>
+            <div class="pricing-card__price-wrap">
+              <span class="pricing-card__price">₩35,000</span>
+              <span class="pricing-card__period" data-i18n="stay_period">/ 최대 3일 이용</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="stay_f1">캐리어 최대 2개 보관</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="stay_f2">3일간 구매품 누적 집결</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="stay_f3">공항 우선 픽업 라인 이용</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="stay_f4">LUGGAGE PASS 골드 네임택 증정</span></li>
+            </ul>
+            <a href="#apply" class="pricing-card__btn" data-plan="STAY" data-i18n="plan_apply_now_btn">지금 신청하기</a>
+          </div>
+
+          <!-- 3. PREMIUM PLAN -->
+          <div class="pricing-card" data-animate="fade-up" data-delay="300">
+            <h3 class="pricing-card__name">PREMIUM</h3>
+            <div class="pricing-card__price-wrap">
+              <span class="pricing-card__price">₩50,000</span>
+              <span class="pricing-card__period" data-i18n="premium_period">/ 최대 7일 (전 일정)</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="premium_f1">캐리어 수량 무제한 보관</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="premium_f2">전 일정 누적 집결 & 특수 포장</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="premium_f3">공항 VIP 패스트랙 수령</span></li>
+              <li><span class="check-icon" aria-hidden="true">✔</span> <span data-i18n="premium_f4">백화점 VIP 라운지 1회 이용권</span></li>
+            </ul>
+            <a href="#apply" class="pricing-card__btn" data-plan="PREMIUM" data-i18n="plan_select_btn">플랜 선택</a>
+          </div>
+        </div>
+
+        <p class="pricing__note text-center" data-i18n="pricing_note" data-animate="fade-up" data-delay="400">
+          * 모든 요금은 부가세 포함 금액이며, 신세계 웰컴센터 현장 발급 시 결제됩니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. Media Section (3-5)
+         ========================================================================= -->
+    <section id="media" class="media section-padding bg-dark">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-label" data-i18n="media_label">MEDIA & STORY</span>
+          <h2 class="section-heading text-white" data-i18n="media_heading">미디어로 만나는 패스</h2>
+          <p class="section-desc text-light" data-i18n="media_desc">
+            공식 홍보 영상과 카드뉴스 가이드로 LUGGAGE PASS의 생생한 혜택을 확인해보세요.
+          </p>
+        </div>
+
+        <div class="media__grid">
+          <!-- 비디오 플레이어 -->
+          <div class="media__col" data-animate="fade-up" data-delay="100">
+            <h3 class="media__subheading" data-i18n="video_title">공식 홍보 영상 (Official Video)</h3>
+            <div class="media__video-box">
+              <video controls preload="metadata" playsinline poster="assets/images/poster.png">
+                <source src="assets/video/promo.mp4" type="video/mp4">
+                브라우저가 비디오 태그를 지원하지 않습니다.
+              </video>
+            </div>
+          </div>
+
+          <!-- 카드뉴스 캐러셀 -->
+          <div class="media__col" data-animate="fade-up" data-delay="200">
+            <h3 class="media__subheading" data-i18n="cardnews_title">카드뉴스 이용 가이드 (Card News)</h3>
+            <div class="slider-container" id="cardnews-slider" tabindex="0" aria-label="카드뉴스 슬라이더">
+              <div class="slider-track" id="slider-track">
+                <div class="slider-slide"><img src="assets/images/card-01.png" alt="Card News 1"></div>
+                <div class="slider-slide"><img src="assets/images/card-02.png" alt="Card News 2"></div>
+                <div class="slider-slide"><img src="assets/images/card-03.png" alt="Card News 3"></div>
+                <div class="slider-slide"><img src="assets/images/card-04.png" alt="Card News 4"></div>
+                <div class="slider-slide"><img src="assets/images/card-05.png" alt="Card News 5"></div>
+              </div>
+              <button class="slider-btn slider-btn--prev" id="slide-prev" aria-label="이전 카드">‹</button>
+              <button class="slider-btn slider-btn--next" id="slide-next" aria-label="다음 카드">›</button>
+            </div>
+            <div class="slider-dots" id="slider-dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. Apply Section (3-6)
+         ========================================================================= -->
+    <section id="apply" class="apply section-padding">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-label" data-i18n="apply_label">HOW TO APPLY</span>
+          <h2 class="section-heading" data-i18n="apply_heading">웰컴센터 신청 안내</h2>
+          <p class="section-desc" data-i18n="apply_desc">
+            신세계백화점 웰컴센터에 방문하시면 3분 안에 간편하게 패스를 발급받으실 수 있습니다.
+          </p>
+        </div>
+
+        <div class="apply__grid">
+          <!-- 웰컴센터 안내 -->
+          <div class="apply-info-card" data-animate="fade-up" data-delay="100">
+            <h3 class="apply-info-card__title" data-i18n="center_title">신세계 웰컴센터 데스크</h3>
+            <ul class="apply-info-list">
+              <li>
+                <span class="info-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong data-i18n="info_loc_title">위치</strong>
+                  <p data-i18n="info_loc_desc">신세계백화점 본점 신관 B1F 웰컴센터</p>
+                </div>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">⏰</span>
+                <div>
+                  <strong data-i18n="info_time_title">운영 시간</strong>
+                  <p data-i18n="info_time_desc">월~목 10:30~20:00 / 금~일·공휴일 10:30~20:30</p>
+                </div>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">🛂</span>
+                <div>
+                  <strong data-i18n="info_pass_title">필수 준비물</strong>
+                  <p data-i18n="info_pass_desc">외국인 등록 여권 (Passport 필수)</p>
+                </div>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">🛫</span>
+                <div>
+                  <strong data-i18n="info_pickup_title">공항 수령 데스크</strong>
+                  <p data-i18n="info_pickup_desc">인천국제공항 T1/T2 및 김포국제공항</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="apply-hashtags">
+              <span>#ShinsegaePass</span>
+              <span>#HandsFreeKorea</span>
+              <span>#LuggagePass</span>
+            </div>
+          </div>
+
+          <!-- 사전 발급 시뮬레이터 -->
+          <div class="apply-form-card" data-animate="fade-up" data-delay="200">
+            <h3 class="apply-form-card__title" data-i18n="simulator_title">사전 발급 시뮬레이터</h3>
+            <form id="apply-simulator-form" onsubmit="event.preventDefault(); showVoucherModal();">
+              <label class="form-label" data-i18n="form_select_plan">이용하실 패스 플랜을 선택하세요:</label>
+              
+              <div class="plan-radio-group">
+                <label class="plan-radio-item">
+                  <input type="radio" name="plan" value="DAY">
+                  <span class="radio-box">
+                    <span class="plan-name">DAY PASS</span>
+                    <span class="plan-cost">₩20,000</span>
+                  </span>
+                </label>
+
+                <label class="plan-radio-item">
+                  <input type="radio" name="plan" value="STAY" checked>
+                  <span class="radio-box">
+                    <span class="plan-name">STAY PASS ⭐</span>
+                    <span class="plan-cost">₩35,000</span>
+                  </span>
+                </label>
+
+                <label class="plan-radio-item">
+                  <input type="radio" name="plan" value="PREMIUM">
+                  <span class="radio-box">
+                    <span class="plan-name">PREMIUM PASS</span>
+                    <span class="plan-cost">₩50,000</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="summary-box">
+                <div class="summary-row">
+                  <span data-i18n="sum_expected_price">결제 예정 금액:</span>
+                  <strong id="summary-price" class="summary-price">₩35,000</strong>
+                </div>
+                <p class="summary-sub" data-i18n="sum_notice">* 현장 웰컴센터에서 여권 제시 후 결제됩니다.</p>
+              </div>
+
+              <button type="submit" class="apply-submit-btn" data-i18n="btn_generate_voucher">
+                모바일 사전 바우처 보기 ›
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       8. Mobile Pre-Voucher Modal
+       ========================================================================= -->
+  <div id="voucher-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="voucher-plan-title">
+    <div class="voucher-card">
+      <button class="modal-close-btn" onclick="closeVoucherModal()" aria-label="닫기">×</button>
+      <span class="voucher-badge">SHINSEGAE LUGGAGE PASS</span>
+      <h4 id="voucher-plan-title">STAY PASS (추천)</h4>
+      <div id="voucher-plan-price" class="voucher-price">₩35,000</div>
+
+      <div class="voucher-qr-wrap">
+        <div id="voucher-code" class="voucher-code">SSG-89241</div>
+        <div class="voucher-qr-text">📱 [PRE-ISSUANCE CODE]</div>
+      </div>
+
+      <p class="voucher-desc" data-i18n="voucher_guide">
+        웰컴센터 직원에게 이 화면과 여권을 보여주시면 즉시 발급됩니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       9. Footer (3-7)
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container text-center">
+      <h3 class="footer-logo">SHINSEGAE <span>LUGGAGE PASS</span></h3>
+      <p class="footer-slogan" data-i18n="footer_slogan">쇼핑은 더 많이, 짐은 더 가볍게 · Shop more. Carry less.</p>
+
+      <div class="footer-sns">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="sns-link">Instagram</a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="sns-link">TikTok</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="sns-link">YouTube</a>
+      </div>
+
+      <p class="footer-hashtags">#ShinsegaePass #HandsFreeKorea #LuggagePass #TravelSeoul</p>
+
+      <p class="footer-copy" data-i18n="footer_copy">
+        © 2026 SHINSEGAE DEPARTMENT STORE. ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="최상단으로 이동">
+    ↑
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/i18n.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
